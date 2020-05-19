@@ -8,7 +8,8 @@ class InstagramBot:
     def __init__(self, username, password):
         self.username = username
         self.password = password
-        self.driver = webdriver.Firefox(executable_path=r"F:\web\botinstagram\geckodriver\geckodriver.exe")
+        self.driver = webdriver.Firefox(executable_path=r"./geckodriver.exe")
+        #Coloque aqui o caminho do arquivo Geckodriver
 
     def login(self):
         driver = self.driver
@@ -85,6 +86,6 @@ class InstagramBot:
 
 
 DiefersonBot = InstagramBot(
-    "eudiefersonsoares", "0519Dieferson"
+    "seunomeusuario", "suasenha"
 )  # Entre com o usuário e senha aqui
 DiefersonBot.login()
